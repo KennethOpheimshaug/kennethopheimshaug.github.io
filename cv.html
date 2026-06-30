@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#08101f">
+  <title>Kenneth Opheimshaug | CV</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .cv-viewer-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cv-viewer-shell {
+      width: min(1120px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2rem 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      flex: 1;
+    }
+
+    .cv-viewer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 1.2rem 1.4rem;
+    }
+
+    .cv-viewer-header h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.05;
+    }
+
+    .cv-viewer-header p {
+      margin: 0.45rem 0 0;
+      color: var(--muted);
+    }
+
+    .cv-frame {
+      flex: 1;
+      min-height: calc(100vh - 11rem);
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: var(--shadow);
+    }
+
+    .cv-viewer-actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 700px) {
+      .cv-viewer-shell {
+        padding-top: 1rem;
+      }
+
+      .cv-frame {
+        min-height: calc(100vh - 13rem);
+      }
+    }
+  </style>
+</head>
+<body class="cv-viewer-page">
+  <main class="cv-viewer-shell">
+    <section class="surface card cv-viewer-header">
+      <div>
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>Kenneth Opheimshaug</h1>
+        <p>CV-en vises direkte i nettleseren i stedet for a lastes ned automatisk.</p>
+      </div>
+
+      <div class="cv-viewer-actions">
+        <a class="button secondary" href="index.html">Tilbake til forsiden</a>
+      </div>
+    </section>
+
+    <iframe
+      class="cv-frame"
+      src="CV.pdf#view=FitH"
+      title="Kenneth Opheimshaug CV"
+    ></iframe>
+  </main>
+</body>
+</html>
