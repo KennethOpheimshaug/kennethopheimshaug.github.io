@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#08101f">
+  <title>Kenneth Opheimshaug | Store</title>
+  <meta
+    name="description"
+    content="A modern clothing store page built in the same style as the main site."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Kenneth Opheimshaug</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html#about">Om meg</a>
+          <a href="index.html#projects">Prosjekter</a>
+          <a href="index.html#work">Arbeid</a>
+          <a href="cv.html">CV</a>
+          <a href="store.html" aria-current="page">Store</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero store-hero">
+        <div class="container store-hero-grid">
+          <div class="hero-copy">
+            <span class="kicker">Store</span>
+            <h1>En enkel butikk for moderne klær og tilbehør.</h1>
+            <p>
+              Denne siden gir deg et stilrent utgangspunkt for en enkel klesbutikk med kolleksjoner,
+              produktkort og tydelige handlingsknapper i samme visuelle stil som resten av siden.
+            </p>
+
+            <div class="cta-row">
+              <a class="button primary" href="#featured-products">Se produkter</a>
+              <a class="button secondary" href="#collections">Utforsk kolleksjoner</a>
+            </div>
+          </div>
+
+          <aside class="surface card store-feature-card">
+            <div>
+              <p class="eyebrow">Ukens drop</p>
+              <h2>Bygg opp en moderne butikk rundt sesongens viktigste plagg.</h2>
+              <p>
+                Legg til ekte produktbilder, størrelser og utsjekk senere når du vil utvide siden.
+              </p>
+            </div>
+
+            <div class="store-stat-grid">
+              <div class="mini-card">
+                <span>Gratis frakt</span>
+                <strong>Over 799 kr</strong>
+              </div>
+              <div class="mini-card">
+                <span>Retur</span>
+                <strong>30 dager</strong>
+              </div>
+              <div class="mini-card">
+                <span>Materialer</span>
+                <strong>Bomull og ull</strong>
+              </div>
+              <div class="mini-card">
+                <span>Nye varer</span>
+                <strong>Hver fredag</strong>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="collections" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Kolleksjoner</span>
+            <h2>Start med noen tydelige kategorier.</h2>
+            <p>
+              Her har du en enkel struktur for å vise fram ulike typer klær på en ryddig og moderne måte.
+            </p>
+          </div>
+
+          <div class="store-category-grid">
+            <article class="surface card store-category-card">
+              <span class="project-tag">Outerwear</span>
+              <h3>Layering</h3>
+              <p>Lette jakker og overshirts for kjøligere morgener, sene kvelder og vær i endring.</p>
+              <a class="button secondary" href="#featured-products">Se varer</a>
+            </article>
+
+            <article class="surface card store-category-card">
+              <span class="project-tag">Essentials</span>
+              <h3>Basisplagg</h3>
+              <p>T-skjorter, gensere og bukser med enkle snitt som fungerer hele uka.</p>
+              <a class="button secondary" href="#featured-products">Se varer</a>
+            </article>
+
+            <article class="surface card store-category-card">
+              <span class="project-tag">Accessories</span>
+              <h3>Detaljene</h3>
+              <p>Capser, vesker og skjerf som gjør uttrykket komplett uten å stjele fokus.</p>
+              <a class="button secondary" href="#featured-products">Se varer</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured-products" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Produkter</span>
+            <h2>Første kolleksjon med ekte produktbilder.</h2>
+            <p>
+              Hver vare viser bilde, tilgjengelige størrelser og en tydelig knapp for å legge i handlekurven.
+            </p>
+          </div>
+
+          <div class="store-product-grid">
+            <article class="surface card product-card">
+              <figure class="product-media">
+                <img
+                  class="product-image"
+                  src="Tskjorte%20C%23.png"
+                  alt="T-skjorte C#"
+                >
+              </figure>
+              <div class="product-meta">
+                <span class="project-tag">T-skjorte</span>
+                <h3>T-skjorte C#</h3>
+                <p>En ren utvikler-tee med tydelig C#-print og et enkelt uttrykk som passer til hverdags.</p>
+                <div class="product-sizes">
+                  <span class="product-size-label">Available sizes</span>
+                  <div class="size-list" aria-label="Available sizes: S, M, L, XL">
+                    <span class="size-chip">S</span>
+                    <span class="size-chip">M</span>
+                    <span class="size-chip">L</span>
+                    <span class="size-chip">XL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <strong class="product-price">399 kr</strong>
+                <button class="button primary add-to-basket" type="button" aria-label="Add T-skjorte C# to basket">Add to basket</button>
+              </div>
+            </article>
+
+            <article class="surface card product-card">
+              <figure class="product-media">
+                <img
+                  class="product-image"
+                  src="Tskjorte%20Copilot.png"
+                  alt="T-skjorte Copilot"
+                >
+              </figure>
+              <div class="product-meta">
+                <span class="project-tag">T-skjorte</span>
+                <h3>T-skjorte Copilot</h3>
+                <p>En mørk tee med Copilot-motiv for dager med god flyt, raske iterasjoner og ny kode i produksjon.</p>
+                <div class="product-sizes">
+                  <span class="product-size-label">Available sizes</span>
+                  <div class="size-list" aria-label="Available sizes: S, M, L, XL">
+                    <span class="size-chip">S</span>
+                    <span class="size-chip">M</span>
+                    <span class="size-chip">L</span>
+                    <span class="size-chip">XL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <strong class="product-price">399 kr</strong>
+                <button class="button primary add-to-basket" type="button" aria-label="Add T-skjorte Copilot to basket">Add to basket</button>
+              </div>
+            </article>
+
+            <article class="surface card product-card">
+              <figure class="product-media">
+                <img
+                  class="product-image"
+                  src="Hettegenser%20Tux.png"
+                  alt="Hettegenser Tux"
+                >
+              </figure>
+              <div class="product-meta">
+                <span class="project-tag">Hettegenser</span>
+                <h3>Hettegenser Tux</h3>
+                <p>En komfortabel hettegenser med Tux-print og myk passform for kjølige kvelder og lange kodeøkter.</p>
+                <div class="product-sizes">
+                  <span class="product-size-label">Available sizes</span>
+                  <div class="size-list" aria-label="Available sizes: S, M, L, XL">
+                    <span class="size-chip">S</span>
+                    <span class="size-chip">M</span>
+                    <span class="size-chip">L</span>
+                    <span class="size-chip">XL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <strong class="product-price">699 kr</strong>
+                <button class="button primary add-to-basket" type="button" aria-label="Add Hettegenser Tux to basket">Add to basket</button>
+              </div>
+            </article>
+
+            <article class="surface card product-card">
+              <figure class="product-media">
+                <img
+                  class="product-image"
+                  src="Tskjorte%20Im%20too%20senior.png"
+                  alt="T-skjorte I'm Too Senior"
+                >
+              </figure>
+              <div class="product-meta">
+                <span class="project-tag">T-skjorte</span>
+                <h3>T-skjorte I&apos;m Too Senior</h3>
+                <p>En t-skjorte med glimt i øyet for utviklere som har sett nok legacy til å mene noe om alt.</p>
+                <div class="product-sizes">
+                  <span class="product-size-label">Available sizes</span>
+                  <div class="size-list" aria-label="Available sizes: S, M, L, XL">
+                    <span class="size-chip">S</span>
+                    <span class="size-chip">M</span>
+                    <span class="size-chip">L</span>
+                    <span class="size-chip">XL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <strong class="product-price">399 kr</strong>
+                <button class="button primary add-to-basket" type="button" aria-label="Add T-skjorte I'm Too Senior to basket">Add to basket</button>
+              </div>
+            </article>
+
+            <article class="surface card product-card">
+              <figure class="product-media">
+                <img
+                  class="product-image"
+                  src="Hettegenser%20ClaudeCode.png"
+                  alt="Hettegenser ClaudeCode"
+                >
+              </figure>
+              <div class="product-meta">
+                <span class="project-tag">Hettegenser</span>
+                <h3>Hettegenser ClaudeCode</h3>
+                <p>En varm hoodie med ClaudeCode-motiv, laget for fokus, komfort og litt ekstra nerdestolthet.</p>
+                <div class="product-sizes">
+                  <span class="product-size-label">Available sizes</span>
+                  <div class="size-list" aria-label="Available sizes: S, M, L, XL">
+                    <span class="size-chip">S</span>
+                    <span class="size-chip">M</span>
+                    <span class="size-chip">L</span>
+                    <span class="size-chip">XL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <strong class="product-price">699 kr</strong>
+                <button class="button primary add-to-basket" type="button" aria-label="Add Hettegenser ClaudeCode to basket">Add to basket</button>
+              </div>
+            </article>
+
+            <article class="surface card product-card">
+              <figure class="product-media product-media-carousel" data-product-carousel>
+                <img
+                  class="product-image"
+                  src="Poloskjorte%20front.png"
+                  alt="Poloskjorte front"
+                  data-view-label="Front"
+                >
+                <img
+                  class="product-image"
+                  src="Poloskjorte%20bak.png"
+                  alt="Poloskjorte bak"
+                  data-view-label="Bak"
+                  hidden
+                >
+                <button
+                  class="product-carousel-arrow"
+                  type="button"
+                  aria-label="Bytt mellom front og bak på poloskjorte"
+                  data-carousel-toggle
+                >
+                  <span aria-hidden="true">&#10095;</span>
+                </button>
+                <figcaption class="product-carousel-caption" data-carousel-caption>Front</figcaption>
+              </figure>
+              <div class="product-meta">
+                <span class="project-tag">Poloskjorte</span>
+                <h3>Poloskjorte</h3>
+                <p>En klassisk poloskjorte vist fra både front og bak. Bruk pilen på bildet for å bytte visning.</p>
+                <div class="product-sizes">
+                  <span class="product-size-label">Available sizes</span>
+                  <div class="size-list" aria-label="Available sizes: S, M, L, XL">
+                    <span class="size-chip">S</span>
+                    <span class="size-chip">M</span>
+                    <span class="size-chip">L</span>
+                    <span class="size-chip">XL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <strong class="product-price">499 kr</strong>
+                <button class="button primary add-to-basket" type="button" aria-label="Add Poloskjorte to basket">Add to basket</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="surface card store-banner">
+            <div>
+              <p class="eyebrow">Neste steg</p>
+              <h2>Utvid videre med ekte produkter, handlekurv og betaling.</h2>
+              <p>
+                Denne siden er satt opp som en grunnmur for en enkel klesbutikk på GitHub Pages.
+              </p>
+            </div>
+
+            <div class="store-banner-actions">
+              <a class="button primary" href="index.html">Tilbake til forsiden</a>
+              <a class="button secondary" href="cv.html">Åpne CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Bygget for GitHub Pages.</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.querySelectorAll("[data-product-carousel]").forEach((carousel) => {
+      const images = Array.from(carousel.querySelectorAll(".product-image"));
+      const caption = carousel.querySelector("[data-carousel-caption]");
+      const toggleButton = carousel.querySelector("[data-carousel-toggle]");
+      let currentIndex = 0;
+
+      const render = () => {
+        images.forEach((image, index) => {
+          image.hidden = index !== currentIndex;
+        });
+
+        if (caption) {
+          caption.textContent = images[currentIndex].dataset.viewLabel || "";
+        }
+      };
+
+      if (toggleButton) {
+        toggleButton.addEventListener("click", () => {
+          currentIndex = currentIndex === 0 ? 1 : 0;
+          render();
+        });
+      }
+
+      render();
+    });
+  </script>
+</body>
+</html>

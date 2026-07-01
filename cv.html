@@ -14,6 +14,12 @@
       flex-direction: column;
     }
 
+    .cv-viewer-page .page-shell {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
     .cv-viewer-shell {
       width: min(1120px, calc(100% - 2rem));
       margin: 0 auto;
@@ -71,33 +77,38 @@
     }
   </style>
 </head>
+<body class="cv-viewer-page">
+  <div class="page-shell">
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
-        <a class="brand" href="#top">
+        <a class="brand" href="index.html">
           <span class="brand-mark" aria-hidden="true"></span>
           <span class="brand-text">Kenneth Opheimshaug</span>
         </a>
         <div class="nav-links">
-        <a href="index.html#about">Om meg</a>
-        <a href="index.html#projects">Prosjekter</a>
-        <a href="index.html#work">Arbeid</a>
-        <a href="cv.html">CV</a>
+          <a href="index.html#about">Om meg</a>
+          <a href="index.html#projects">Prosjekter</a>
+          <a href="index.html#work">Arbeid</a>
+          <a href="cv.html" aria-current="page">CV</a>
+          <a href="store.html">Store</a>
         </div>
       </nav>
     </header>
-  <main class="cv-viewer-shell">
-    <section class="surface card cv-viewer-header">
-      <div>
-        <p class="eyebrow">Curriculum Vitae</p>
-        <h1>Kenneth Olsen Opheimshaug</h1>
-      </div>
-    </section>
 
-    <iframe
-      class="cv-frame"
-      src="CV.pdf#view=FitH"
-      title="Kenneth Opheimshaug CV"
-    ></iframe>
-  </main>
+    <main class="cv-viewer-shell">
+      <section class="surface card cv-viewer-header">
+        <div>
+          <p class="eyebrow">Curriculum Vitae</p>
+          <h1>Kenneth Olsen Opheimshaug</h1>
+        </div>
+      </section>
+
+      <iframe
+        class="cv-frame"
+        src="CV.pdf#view=FitH"
+        title="Kenneth Opheimshaug CV"
+      ></iframe>
+    </main>
+  </div>
 </body>
 </html>
