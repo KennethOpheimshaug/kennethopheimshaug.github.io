@@ -575,8 +575,8 @@ button:focus-visible {
 }
 
 .product-media-carousel .product-image {
-  width: 124%;
-  height: 124%;
+  width: 200%;
+  height: 200%;
 }
 
 .store-product-grid .product-card:nth-child(2) .product-media {
